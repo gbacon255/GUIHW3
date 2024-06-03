@@ -1,10 +1,13 @@
+<!--
+File: index.html
+GUI Assignment: #3, Adding a multiplication table to a website
+Garrett Bacon, UMass Lowell Computer Science, Garrett_Bacon@student.uml.edu
+For this project, I prompt the user to enter the bounds for a multiplication table, upon entering the values it
+will activate my javascript code to validate the numbers, create the table, and display it on the webpage
+-->
+
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-    <!--Script to initialize data-->
     
     <head>
         <meta charset="utf-8">
@@ -16,22 +19,23 @@
             <h1>Multiplication Table Generator</h1>
             <h2>Please Enter Table Bounds (-75 to 75) Below:</h2>
             <form>
-                Start number:<input type="number" id="topStart"name="topStart">
+                Start number: <input type="number" id="topStart"name="topStart">
                 <br>
-                Top end number:<input type="number" id="topEnd" name="topEnd">
+                Top end number: <input type="number" id="topEnd" name="topEnd">
                 <br>
-                Side start number:<input type="number" id="sideStart" name="sideStart">
+                Side start number: <input type="number" id="sideStart" name="sideStart">
                 <br>
-                Side end number:<input type="number" id="sideEnd" name="sideEnd">
+                Side end number: <input type="number" id="sideEnd" name="sideEnd">
                 <br>
                 <input type="button" value="Submit" onclick="initializeData()">
                 
 
             </form>
-            <br>
-            <br>
+        <div id="container">
+            <div id="error"></div>
             <div id="result"></div>
-            <script src = "init.js"></script>
+        </div>
+        <script src = "init.js"></script>
         </div>
     </body>
 </html>
