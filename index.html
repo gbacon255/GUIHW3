@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <!--Script to initialize data-->
+    
+    <head>
+        <meta charset="utf-8">
+        <title>GUIHW3</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="input section">
+            <h1>Multiplication Table Generator</h1>
+            <h2>Please Enter Table Bounds (-75 to 75) Below:</h2>
+            <form>
+                Start number:<input type="number" id="topStart"name="topStart">
+                <br>
+                Top end number:<input type="number" id="topEnd" name="topEnd">
+                <br>
+                Side start number:<input type="number" id="sideStart" name="sideStart">
+                <br>
+                Side end number:<input type="number" id="sideEnd" name="sideEnd">
+                <br>
+                <input type="button" value="Submit" onclick="initializeData()">
+                
+
+            </form>
+            <br>
+            <br>
+            <div id="result"></div>
+            <script src = "init.js"></script>
+        </div>
+    </body>
+</html>
