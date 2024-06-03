@@ -1,10 +1,17 @@
-
+/*
+File: style.css
+GUI Assignment: #3, Adding a multiplication table to a website
+Garrett Bacon, UMass Lowell Computer Science, Garrett_Bacon@student.uml.edu
+This file does the styling for my table site.
+*/
+/*Title at the top of the page*/
 h1{
     background-color: #3399CC;
     color: white;
     box-shadow: 5px;
     padding-bottom: 10px;
 }
+/*Styling for the user input form*/
 form{
     margin-right: -15px;
     display:inline-block;
@@ -18,52 +25,55 @@ form{
     border-right: 2px solid black;
     border-radius: 5px;
 }
+/*Header styling for the error message*/
 #error h2{
     color: red;
 }
-
+/*Styling for the error message box*/
 #error{
     margin-right: 500px;
     padding:20px;
     padding-top: -10px;
 }
-
+/*Styling for loading text*/
 #result p{
     text-size-adjust: larger;
     color: rgb(9, 122, 9);
 }
+/*Added a scrollable container for the table*/
 #container{
-    float:right;
+    float: right;
     width:100%;
     height: 500px;
     overflow: auto;
-    border: 2px solid black;
 }
+/*Adds border around the table*/
 #result table{
     border: 1px solid black;
     
 }
-
+/*Adds border for the table data*/
 #result td{
     border-bottom: 2px solid black;
     border-left: 2px solid black;
 }
+/*Adds border and background for table headings*/
 #result th{
     color: white;
     background-color: black;
     border-bottom: 2px solid black;
     border-left: 2px solid black;
 }
-
+/*Even rows of the table are highlighted for visibility*/
 #result td:nth-child(even){
-    background-color: yellow;
+    background-color: beige;
 }
-
-
+/*formatting for number input boxes*/
 input[type="number"]{
     padding:5px;
     width:33%;
 }
+/*formatting for hovering over the submit button*/
 input[type="button"]:hover{
     color: darkgray;
 }

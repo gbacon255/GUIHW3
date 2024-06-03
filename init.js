@@ -1,4 +1,9 @@
-
+/*
+File: init.js
+GUI Assignment: #3, Adding a multiplication table to a website
+Garrett Bacon, UMass Lowell Computer Science, Garrett_Bacon@student.uml.edu
+This file validates the user input and uses it to create a html table that displays multiplication
+*/
 
 //Function to collect and validate our data when the submit button is pressed
 function initializeData(){
