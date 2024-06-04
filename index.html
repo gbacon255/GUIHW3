@@ -14,10 +14,12 @@ will activate my javascript code to validate the numbers, create the table, and 
         <title>GUIHW3</title>
         <link rel="stylesheet" href="css/style.css">
     </head>
+    <!--Body section to present text-->
     <body>
         <div class="input section">
             <h1>Multiplication Table Generator</h1>
             <h2>Please Enter Table Bounds (-75 to 75) Below:</h2>
+            <!--form for user input-->
             <form>
                 Start number: <input type="number" id="topStart"name="topStart">
                 <br>
@@ -27,14 +29,16 @@ will activate my javascript code to validate the numbers, create the table, and 
                 <br>
                 Side end number: <input type="number" id="sideEnd" name="sideEnd">
                 <br>
-                <input type="button" value="Submit" onclick="initializeData()">
+                <input type="button" value="Generate Table" onclick="initializeData()">
                 
 
             </form>
+        <!--This div section allows for the table and error message to be displayed, used in JS-->
         <div id="container">
             <div id="error"></div>
             <div id="result"></div>
         </div>
+        <!--Call on my javascript file-->
         <script src = "init.js"></script>
         </div>
     </body>

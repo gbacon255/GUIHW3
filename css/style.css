@@ -56,14 +56,31 @@ form{
 #result td{
     border-bottom: 2px solid black;
     border-left: 2px solid black;
+    text-align: center;
+    padding:2px
 }
 /*Adds border and background for table headings*/
 #result th{
+    position: sticky;
     color: white;
     background-color: black;
     border-bottom: 2px solid black;
     border-left: 2px solid black;
+    text-align: center;
+    padding:2px;
+    z-index:1;
 }
+/*formatting to allow the table headers to stay in place*/
+#result th:nth-child(1) {
+    left: 0;
+    z-index: 2; 
+}
+/*formatting to allow the table headers to stay in place*/
+#result th:not(:first-child) {
+    top: 0;
+    z-index: 1;
+}
+
 /*Even rows of the table are highlighted for visibility*/
 #result td:nth-child(even){
     background-color: beige;

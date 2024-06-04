@@ -66,12 +66,12 @@ function initializeData(){
 
 function generateTable(xStart, xEnd, yStart,yEnd){
     //initialize table html object
-    let table = '<table><tr><th>-</th>';
+    let table = '<table><thead><tr><th>-</th>';
     //create the top row of the table ${} allows us to include the var in our text
     for (i = xStart; i <= xEnd; i++){
         table += `<th> ${i} </th>`;
     }
-    table+='</tr>';
+    table+='</tr></thead><tbody>';
     //double for loop to generate the inside of the table
     //first loop creates the y axis
     for(i = yStart; i <= yEnd; i++){
@@ -81,7 +81,7 @@ function generateTable(xStart, xEnd, yStart,yEnd){
             table += `<td>${i*j}</td>`;
         }
         //terminate the row
-        table +='</tr>'
+        table +='</tbody></tr>'
     }
     //return our html table object
     return table;;
