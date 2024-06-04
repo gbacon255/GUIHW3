@@ -25,6 +25,7 @@ function initializeData(){
     const topEndNum = Number(topEnd);
     const sideStartNum = Number(sideStart);
     const sideEndNum = Number(sideEnd);
+
     //get the div elements to access later one for error case and one for the table
     const errorDiv = document.getElementById('error')
     const resultDiv = document.getElementById('result');
@@ -36,18 +37,21 @@ function initializeData(){
         error.innerHTML = `<h2>Error:</h2><p>Please Enter Valid Numbers (-75 to 75)</p>`;
         return;
     }
+
     //Check to see if the numbers are in our specified range
     if (!(topStartNum >= -75 && topStartNum <= 75 && sideStartNum >= -75 && sideEndNum <=75)) {
         resultDiv.innerHTML = '';
         error.innerHTML = `<h2>Error:</h2><p>Please Enter Valid Numbers (-75 to 75)</p>`;
         return;
     }
+
     //if the end number is larger than the start number for either axis we throw an error
     if(topStartNum>topEndNum || sideStartNum > sideEndNum){
         resultDiv.innerHTML = '';
         error.innerHTML = '<h2>Error:</h2><p>Please ensure the end number is greater than the start number</p>'
         return;
     }
+
     //Success case, lets generate the table
      else{
         error.innerHTML = '';
@@ -61,6 +65,7 @@ function initializeData(){
             resultDiv.innerHTML = table; //display our newly generated table
         }, 1500);
     }
+
     return;
 }
 
@@ -72,6 +77,7 @@ function generateTable(xStart, xEnd, yStart,yEnd){
         table += `<th> ${i} </th>`;
     }
     table+='</tr></thead><tbody>';
+
     //double for loop to generate the inside of the table
     //first loop creates the y axis
     for(i = yStart; i <= yEnd; i++){
@@ -83,6 +89,7 @@ function generateTable(xStart, xEnd, yStart,yEnd){
         //terminate the row
         table +='</tbody></tr>'
     }
+    
     //return our html table object
     return table;;
 }
