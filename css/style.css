@@ -11,6 +11,7 @@ h1{
     box-shadow: 5px;
     padding-bottom: 10px;
 }
+
 /*Styling for the user input form*/
 form{
     margin-right: -15px;
@@ -25,21 +26,25 @@ form{
     border-right: 2px solid black;
     border-radius: 5px;
 }
+
 /*Header styling for the error message*/
 #error h2{
     color: red;
 }
+
 /*Styling for the error message box*/
 #error{
     margin-right: 500px;
     padding:20px;
     padding-top: -10px;
 }
+
 /*Styling for loading text*/
 #result p{
     text-size-adjust: larger;
     color: rgb(9, 122, 9);
 }
+
 /*Added a scrollable container for the table*/
 #container{
     float: right;
@@ -47,11 +52,13 @@ form{
     height: 500px;
     overflow: auto;
 }
+
 /*Adds border around the table*/
 #result table{
     border: 1px solid black;
     
 }
+
 /*Adds border for the table data*/
 #result td{
     border-bottom: 2px solid black;
@@ -59,6 +66,7 @@ form{
     text-align: center;
     padding:2px
 }
+
 /*Adds border and background for table headings*/
 #result th{
     position: sticky;
@@ -70,11 +78,13 @@ form{
     padding:2px;
     z-index:1;
 }
+
 /*formatting to allow the table headers to stay in place*/
 #result th:nth-child(1) {
     left: 0;
     z-index: 2; 
 }
+
 /*formatting to allow the table headers to stay in place*/
 #result th:not(:first-child) {
     top: 0;
@@ -85,11 +95,13 @@ form{
 #result td:nth-child(even){
     background-color: beige;
 }
+
 /*formatting for number input boxes*/
 input[type="number"]{
     padding:5px;
     width:33%;
 }
+
 /*formatting for hovering over the submit button*/
 input[type="button"]:hover{
     color: darkgray;
